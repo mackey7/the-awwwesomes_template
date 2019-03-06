@@ -2,6 +2,7 @@ import React from "react"
 import styled from 'styled-components'
 import wave1 from '../../images/wave-top.svg'
 import wave2 from '../../images/wave-top2.svg'
+import TopMenu from '../TopMenu/TopMenu.js'
 
 const HeaderWrapper = styled.div`
 width:100%;
@@ -44,6 +45,7 @@ img{
 `;
 const Header = () => (
     <HeaderWrapper>
+        <TopMenu />
         <Title>we create.</Title>
         <SubTitle>strategy is our first name</SubTitle>
         <Wave>
