@@ -31,16 +31,19 @@ letter-spacing: 2.27px;
 `;
 
 const Wave = styled.div`
-display:flex;
-flex-direction:column;
-justify-content:right;
-position:absolute;
-    bottom:-40px;
-    right:0;
+width:100%;
+position:realtive;
+   
 img{
-    height:50px;
-    align-self:flex-end;
-    padding-top:20px;
+    position:absolute;
+    bottom:-68px;
+    right:0;
+    width:40%;
+
+}
+img:nth-child(1){
+    width:30%;
+    margin-bottom:120px;
 }
 `;
 const Header = () => (
