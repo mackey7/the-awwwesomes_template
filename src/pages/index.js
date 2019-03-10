@@ -5,6 +5,7 @@ import Projects from '../components/Projects/Projects.jsx'
 import Company from '../components/Company/Company.jsx'
 import Ideas from '../components/Ideas/Ideas.jsx'
 import Experience from '../components/Experience/Experience.jsx'
+import Contact from '../components/Contact/Contact.jsx'
 import '../components/layout.css';
 
 // import SEO from "./components/seo"
@@ -17,6 +18,7 @@ const IndexPage = () => (
     <Company />
     <Ideas />
     <Experience />
+    <Contact />
   </div>
 )
 
