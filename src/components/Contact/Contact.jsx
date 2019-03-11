@@ -9,20 +9,23 @@ display:flex;
 justify-content:center;
 `;
 
-
 const ContactContent = styled.div`
 width:80%;
 height:100%;
 display:flex;
+     @media(max-width: 992px) {
+        flex-direction:column;
+      
+    }
 `;
-
 
 const ContactText = styled.div`
 width:50%;
 display:flex;
 flex-direction:column;
-
 justify-content: space-around;
+   
+
 
 p{
     font-family: Montserrat;
@@ -33,18 +36,36 @@ p{
 
 footer{
     margin-bottom:-120px;
-color: #541879;
-font-family: Montserrat;
-font-size: 20px;
-text-transform: uppercase;
-letter-spacing: 0.4px;
-line-height: 32.58px;
+    color: #541879;
+    font-family: Montserrat;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    line-height: 32.58px;
 }
+  @media(max-width: 992px) {
+        flex-direction:row;
+        width:100%;
+        order:2;
+            p{
+                 display:none;
+            }
+            footer{
+                margin:0;
+            }
+    }
 `;
+
+
+
 const ContactForm = styled.form`
 width:50%;
 display:flex;
 flex-direction:column;
+ @media(max-width: 992px) {
+        width:100%;
+        order:1;
+    }
 label{
     margin-top:20px;
     color: #440c74;
