@@ -57,6 +57,7 @@ font-weight: 400;
 }
 
 input{
+    cursor:pointer;
 border: 3px solid #c244c1;
 color: #440c74;
 font-family: Montserrat;
@@ -65,6 +66,12 @@ font-weight: 700;
 background:inherit;
 letter-spacing: 2.4px;
 padding:10px 20px;
+:hover{
+    background: #c244c1;
+    color:#fff;
+    border: 3px solid #440c74;
+      transition: 0.8s;
+}
 }
 
 `;
