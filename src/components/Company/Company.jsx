@@ -11,11 +11,20 @@ margin:40px auto;
 figure{
     margin-top:60px;
       width:50%;
+      @media(max-width: 992px) {
+width:100%;
+ }
     img{
        width:100%; 
       
     }
+    @media(max-width: 992px) {
+width:100%;
+ }
 }
+@media(max-width: 992px) {
+flex-direction:column;
+ }
 `;
 const ProjectsContent = styled.div`
 position:relative;
@@ -65,7 +74,9 @@ background:inherit;
 letter-spacing: 2.4px;
 padding:10px 20px;
 }
-
+@media(max-width: 992px) {
+width:100%;
+ }
 `;
 
 const Company = () => (
