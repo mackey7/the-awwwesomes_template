@@ -33,13 +33,15 @@ letter-spacing: 2.27px;
 const Wave = styled.div`
 width:100%;
 position:realtive;
-   
+@media (max-width: 992px) {
+        display:none;
+}
+  
 img{
     position:absolute;
     bottom:-68px;
     right:0;
     width:40%;
-
 }
 img:nth-child(1){
     width:30%;
