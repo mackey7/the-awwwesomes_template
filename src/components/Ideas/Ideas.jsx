@@ -11,16 +11,17 @@ position:relative;
     background-image:url(${fullbg});
 
     h2{
-    
-
         color:#fff;
         font-size:73px;
-text-align:center;
-padding-top:10%;
+        text-align:center;
+        padding-top:10%;
     }
 `;
 
 const Wave = styled.div`
+@media(max-width: 992px) {
+display:none;
+ }
 width:100%;
 img{
 width:50%;
