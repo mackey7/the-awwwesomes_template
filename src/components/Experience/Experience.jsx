@@ -9,12 +9,17 @@ width:80%;
 display:flex;
 flex-wrap:wrap;
 margin:40px auto;
+@media(max-width: 992px) {
+flex-direction:column;
+ }
 figure{
     margin-top:60px;
-      width:50%;
+    width:50%;
+    @media(max-width: 992px) {
+        width:100%;
+    }
     img{
-       width:100%; 
-      
+       width:100%;  
     }
 }
 `;
@@ -46,14 +51,10 @@ h3{
        letter-spacing: 3.4px;
 }
 p{
-
-
 color: #440c74;
 font-family: Roboto;
 font-size: 12px;
 font-weight: 400;
-
-
 }
 
 input{
@@ -73,7 +74,9 @@ padding:10px 20px;
       transition: 0.8s;
 }
 }
-
+     @media(max-width: 992px) {
+width:100%;
+ }
 `;
 
 const Experience = () => (
