@@ -15,7 +15,13 @@ figure{
        width:100%; 
       
     }
+    @media(max-width:992px) {
+width:100%;
+ }
 }
+@media(max-width: 992px) {
+flex-direction:column;
+ }
 `;
 const ProjectsContent = styled.div`
 position:relative;
@@ -45,14 +51,10 @@ h3{
        letter-spacing: 3.4px;
 }
 p{
-
-
 color: #440c74;
 font-family: Roboto;
 font-size: 12px;
 font-weight: 400;
-
-
 }
 
 input{
@@ -65,7 +67,9 @@ background:inherit;
 letter-spacing: 2.4px;
 padding:10px 20px;
 }
-
+@media(max-width: 992px) {
+width:100%;
+ }
 `;
 
 const Projects = () => (
@@ -86,4 +90,5 @@ const Projects = () => (
     </ProjectsWrapper>
 
 )
-export default Projects; 
+export default Projects;
+
