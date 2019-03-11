@@ -62,10 +62,7 @@ const ContactForm = styled.form`
 width:50%;
 display:flex;
 flex-direction:column;
- @media(max-width: 992px) {
-        width:100%;
-        order:1;
-    }
+ 
 label{
     margin-top:20px;
     color: #440c74;
@@ -84,6 +81,7 @@ textarea{
      border: 4px solid #440c74;
 }
 input[type='button']{
+    cursor:pointer;
     width:78px;
     background:inherit;
     border:2px solid #fff;
@@ -94,8 +92,22 @@ input[type='button']{
     font-size: 15px;
     line-height: 44.87px;
     margin-top:50px;
+    :hover{
+         background: rgba(255, 255, 255, 0.431);
+         color:#000;
+         transition:0.4s;
+         border:2px solid #440c74;
+     
+    }
 }
-
+@media(max-width: 992px) {
+        width:100%;
+        order:1;
+        input[type='button']{
+            width:100%;
+              font-size: 20px;
+        }
+    }
 `;
 
 
